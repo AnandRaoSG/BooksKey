@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookskey 📓</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <div class="header">
+        <h1>Bookskey</h1>
+    </div> <br>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>iPhone Review</h2> <br>
+            <h3>Steve Jobs</h3><br>
+            <h5>The iPhone 13, like its predecessors, likely features advancements in camera technology, performance,
+                and display. Some common trends in recent iPhone releases include improvements in camera capabilities,
+                such as enhanced low-light performance and computational photography features.The device is expected to
+                be powered by a new iteration of Apple's custom-designed chip, likely providing improved performance and
+                energy efficiency.</h5> <br>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"> </div>
+
+    <div class="popup-box">
+        <h2>Add Book</h2> <br>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input"> <br>
+            <input type="text" placeholder="Book Author" id="book-author-input"><br>
+            <textarea placeholder="Short Description" id="book-description-input"></textarea> <br>
+            <button id="add-book">Add</button>
+            <button id="cancel-book">Cancel</button>
+        </form>
+    </div>
+
+
+
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
